@@ -26,11 +26,11 @@ func Connect() {
 
 	dbConfig := DBConfig{
 		DBHost:     getEnv("DB_HOST", "localhost"),
-		DBUser:     getEnv("DB_USER", "postgres"),
-		DBPassword: getEnv("DB_PASSWORD", "admin"),
+		DBUser:     getEnv("DB_USER", "root"),
+		DBPassword: getEnv("DB_PASSWORD", ""),
 		DBDatabase: getEnv("DB_DATABASE", "ohas_store"),
-		DBPort:     getEnv("DB_PORT", "5432"),
-		DBDriver:   getEnv("DB_DRIVER", "postgres"),
+		DBPort:     getEnv("DB_PORT", "3306"),
+		DBDriver:   getEnv("DB_DRIVER", "mysql"),
 	}
 
 	if dbConfig.DBDriver == "mysql" {

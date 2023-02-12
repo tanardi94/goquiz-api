@@ -1,8 +1,9 @@
 package main
 
 import (
-	"net/http"
+	"log"
 
+	"github.com/joho/godotenv"
 	"github.com/labstack/echo/v4"
 	database "ohas-api.com/v1/databases"
 	"ohas-api.com/v1/routes"
@@ -10,9 +11,10 @@ import (
 
 func main() {
 	e := echo.New()
-	e.GET("/", func(c echo.Context) error {
-		return c.String(http.StatusOK, "Hello World")
-	})
+	err := godotenv.Load()
+	if err != nil {
+		log.Fatal("Error on loading .env file")
+	}
 
 	database.Connect()
 
