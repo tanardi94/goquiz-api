@@ -4,8 +4,8 @@ import (
 	"net/http"
 
 	"github.com/labstack/echo/v4"
-	database "ohas-api.com/v1/databases"
-	"ohas-api.com/v1/routes"
+	database "ohas-api.com/v2/databases"
+	"ohas-api.com/v2/routes"
 )
 
 func main() {

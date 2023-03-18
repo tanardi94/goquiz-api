@@ -26,7 +26,7 @@ func Connect() {
 
 	dbConfig := DBConfig{
 		DBHost:     getEnv("DB_HOST", "localhost"),
-		DBUser:     getEnv("DB_USER", "postgres"),
+		DBUser:     getEnv("DB_USER", "local_admin"),
 		DBPassword: getEnv("DB_PASSWORD", "admin"),
 		DBDatabase: getEnv("DB_DATABASE", "ohas_store"),
 		DBPort:     getEnv("DB_PORT", "5432"),

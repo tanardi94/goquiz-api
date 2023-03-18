@@ -11,9 +11,9 @@ import (
 	"github.com/labstack/echo/v4"
 	"golang.org/x/crypto/bcrypt"
 	"gorm.io/gorm"
-	database "ohas-api.com/v1/databases"
-	"ohas-api.com/v1/helpers"
-	"ohas-api.com/v1/models"
+	database "ohas-api.com/v2/databases"
+	"ohas-api.com/v2/helpers"
+	"ohas-api.com/v2/models"
 )
 
 type ProfileJSON struct {

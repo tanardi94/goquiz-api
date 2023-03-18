@@ -2,7 +2,7 @@ package basecontroller
 
 import (
 	"github.com/labstack/echo/v4"
-	"ohas-api.com/v1/helpers"
+	"ohas-api.com/v2/helpers"
 )
 
 type Hellaw struct {

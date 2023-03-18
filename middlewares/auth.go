@@ -6,7 +6,7 @@ import (
 
 	"github.com/golang-jwt/jwt/v4"
 	"github.com/labstack/echo/v4"
-	"ohas-api.com/v1/helpers"
+	"ohas-api.com/v2/helpers"
 )
 
 func Authenticate(next echo.HandlerFunc) echo.HandlerFunc {
